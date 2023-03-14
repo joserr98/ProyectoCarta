@@ -1,0 +1,214 @@
+body{
+    height: 100%;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+    color: green;
+}
+
+.flex-justify-center{
+    display: flex;
+    justify-content: center;
+}
+
+.container-fluid{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+.background-1{
+    height: 20em;
+    display: flex;
+    justify-content: center;
+    text-align: center;    
+    background-color: #FF6B6B;
+    color: white;
+}
+
+.background-2{
+    height: 10em;
+    display: none;
+    justify-content: center;
+    text-align: center;    
+    background-color: #FF6B6B;
+    color: white;
+}
+
+.mt-10em{
+    margin-top: 10em;
+}
+
+.space-1{
+    height: 3em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;    
+    background-color: #FF6B6B;
+    color: white;
+}
+
+
+
+
+
+.navbar {
+    height: 10rem;
+    width: 100%;
+    background-color: white;
+    border-bottom: solid 2px #FF6B6B;
+    padding: 0.5rem 1rem 0 1rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.index {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.primary-container{
+    height: 8rem;
+    width: 14rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem 0 1rem;
+    color: green;
+    margin-left: -10rem;
+
+}
+
+.menu{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 8rem;
+    width: 6rem;
+}
+
+.contact-us{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 8rem;
+    width: 6rem;
+}
+
+.red-letter{
+    color: #FF6B6B;
+    text-decoration: none;
+}
+
+.navbar-toggler{
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+
+.pizza {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    background-image: url(../assets/pizza.png);
+    background-size: 50px 50px;
+    
+}
+
+.delivery {
+    display: flex;
+    height: 50px;
+    width: 50px;
+    background-image: url(../assets/delivery.png);
+    background-size: 50px 50px;
+    
+}
+
+.cutlery {
+    display: flex;
+    height: 50px;
+    width: 50px;
+    background-image: url(../assets/cutlery.png);
+    background-size: 50px 50px;
+    
+}
+
+@media only screen and (max-width: 830px){
+    .background-1 {
+        font-size: 0.7rem ;
+    }
+}
+
+@media only screen and (max-width: 670px){
+    .background-1 {
+        font-size: 0.5rem ;
+    }
+}
+
+@media only screen and (max-width: 610px){
+    .image-1 {
+        height: 13em;
+    }
+    .pizza{
+        height: 40px;
+        width: 40px;
+        background-size: 40px 40px;
+    
+    }
+    .delivery{
+        height: 40px;
+        width: 40px;
+        background-size: 40px 40px;
+    
+    }
+    .cutlery{
+        height: 40px;
+        width: 40px;
+        background-size: 40px 40px;
+    
+    }
+    .primary-container {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .background-1{
+        display: none;
+    }
+
+    .background-2{
+        display:flex;
+    }
+
+}
+/* 
+@media only screen and (max-width: 430px){
+    .background-1{
+        display: none;
+    }
+
+    .background-2{
+        display:flex;
+    }
+
+} */
