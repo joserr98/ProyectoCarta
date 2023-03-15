@@ -18,16 +18,8 @@ a{
 }
 
 .container-fluid{
+    width: 100vw;
     margin: 0;
-    padding: 0;
-}
-
-.container{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-
 }
 
 .background-1{
@@ -64,13 +56,15 @@ a{
 
 
 
-
+.h-7{
+    height: 7rem;
+    max-height: 7rem;
+}
 
 .navbar {
-    height: 10rem;
+    /* height: 10rem; */
     width: 100%;
     background-color: white;
-    border-bottom: solid 2px #FF6B6B;
     padding: 0.5rem 1rem 0 1rem;
     display: flex;
     flex-direction: row;
@@ -117,11 +111,14 @@ a{
 }
 
 .navbar-toggler{
-    height: 8rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     border: none;
+    justify-content: end;
+    transition: 1s;
+}
+
+.navbar-toggler:hover{
+    transform: rotate(90deg);
+    transition: 1s;
 }
 
 .pizza {
@@ -212,3 +209,50 @@ a{
     }
 
 } */
+
+.divisor{
+    height: 7.5em;
+    max-height: 7.5rem;
+}
+
+.bg-color-red {
+    background-color: red;
+    border: 1px solid black;
+}
+
+.bg-color-blue {
+    background-color: blue;
+}
+
+.bg-color-green {
+    background-color: green;
+}
+
+.bg-color-white {
+    background-color: white;
+}
+
+.logo-image{
+    height: auto;
+    max-width: 100%;
+    background-image: url(../assets/logoMamma.png);
+    background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 768px){
+    .mobile{
+        display: none;
+    }
+}
+
+.perro{
+    background-color: red;
+    display: flex;
+    margin-top: 20rem;
+}
+
+.background-image1{
+    height: 20rem;
+    background-image: url(../assets/pizzeriamamma.jpg);
+    background-size: 100% 20rem;
+}
