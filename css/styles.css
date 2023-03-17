@@ -5,20 +5,17 @@ body{
     padding: 0;
     display: flex;
     justify-content: center;
+    min-width: 320px;
+    overflow-x: hidden;
+    
 }
 
 a{
     text-decoration: none;
-    color: green;
-}
-
-.flex-justify-center{
-    display: flex;
-    justify-content: center;
+    color: #006200;
 }
 
 .container-fluid{
-    width: 100vw;
     margin: 0;
 }
 
@@ -40,88 +37,37 @@ a{
     color: white;
 }
 
-.mt-10em{
-    margin-top: 10em;
-}
-
-.space-1{
-    height: 3em;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    text-align: center;    
-    background-color: #FF6B6B;
-    color: white;
-}
-
-
-
-.h-7{
-    height: 7rem;
-    max-height: 7rem;
+.navigation-bar{
+    height: 5em;
 }
 
 .navbar {
-    /* height: 10rem; */
-    width: 100%;
-    background-color: white;
-    padding: 0.5rem 1rem 0 1rem;
+    height: 100%;
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
 }
 
-.index {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-
-.primary-container{
-    height: 8rem;
-    width: 14rem;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 1rem 0 1rem;
-    color: green;
-    margin-left: -10rem;
-
-}
-
-.menu{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    height: 8rem;
-    width: 6rem;
-}
-
-.contact-us{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    height: 8rem;
-    width: 6rem;
-}
-
-.red-letter{
-    color: #FF6B6B;
-    text-decoration: none;
-}
-
-.navbar-toggler{
+.navbar-toggler {
+    padding: 0;
     border: none;
-    justify-content: end;
-    transition: 1s;
 }
 
-.navbar-toggler:hover{
-    transform: rotate(90deg);
-    transition: 1s;
+.text-red{
+    color: #FF6B6B;
 }
 
-.pizza {
+.mamma-logo {
+    display: flex;
+    justify-content: center;
+    background-image: url(../assets/mamma-logo.png);
+    height: 3.5em;
+    width: 8em;
+    background-size: 8em 3.5em;
+    
+}
+
+.pizza-icon {
     display: flex;
     justify-content: center;
     height: 50px;
@@ -131,7 +77,7 @@ a{
     
 }
 
-.delivery {
+.delivery-icon {
     display: flex;
     height: 50px;
     width: 50px;
@@ -140,7 +86,7 @@ a{
     
 }
 
-.cutlery {
+.cutlery-icon {
     display: flex;
     height: 50px;
     width: 50px;
@@ -149,38 +95,29 @@ a{
     
 }
 
-@media only screen and (max-width: 830px){
-    .background-1 {
-        font-size: 0.7rem ;
-    }
-}
-
 @media only screen and (max-width: 670px){
-    .background-1 {
-        font-size: 0.5rem ;
-    }
-}
-
-@media only screen and (max-width: 610px){
     .image-1 {
         height: 13em;
     }
-    .pizza{
-        height: 40px;
-        width: 40px;
-        background-size: 40px 40px;
+    .pizza-icon{
+        height: 30px;
+        width: 30px;
+        background-size: 30px 30px;
+        margin-left: -1em;
     
     }
-    .delivery{
-        height: 40px;
-        width: 40px;
-        background-size: 40px 40px;
+    .delivery-icon{
+        height: 30px;
+        width: 30px;
+        background-size: 30px 30px;
+        margin-left: -1em;
     
     }
-    .cutlery{
-        height: 40px;
-        width: 40px;
-        background-size: 40px 40px;
+    .cutlery-icon{
+        height: 30px;
+        width: 30px;
+        background-size: 30px 30px;
+        margin-left: -1em;
     
     }
     .primary-container {
@@ -188,71 +125,147 @@ a{
     }
 }
 
-@media only screen and (max-width: 500px){
-    .background-1{
-        display: none;
-    }
-
-    .background-2{
-        display:flex;
-    }
-
-}
-/* 
-@media only screen and (max-width: 430px){
-    .background-1{
-        display: none;
-    }
-
-    .background-2{
-        display:flex;
-    }
-
-} */
-
 .divisor{
-    height: 7.5em;
-    max-height: 7.5rem;
+    height: 0.2rem;
+    max-height: 0.2rem;
 }
 
 .bg-color-red {
-    background-color: red;
-    border: 1px solid black;
-}
-
-.bg-color-blue {
-    background-color: blue;
+    background-color: #dd3333;
 }
 
 .bg-color-green {
-    background-color: green;
+    background-color: #006200;
 }
 
 .bg-color-white {
     background-color: white;
 }
 
-.logo-image{
-    height: auto;
-    max-width: 100%;
-    background-image: url(../assets/logoMamma.png);
-    background-repeat: no-repeat;
-}
-
 @media only screen and (max-width: 768px){
     .mobile{
         display: none;
     }
+    .patata{
+        flex-direction: row;
+    }
 }
 
-.perro{
-    background-color: red;
-    display: flex;
-    margin-top: 20rem;
+@media only screen and (max-width: 425px){
+    .mobile-display{
+        flex-direction: column;
+        font-size: 0.8rem;
+    }
+
+    .col-mobile-display{
+        width: 100%;
+    }
+
+    .footer-mobile{
+        flex-direction: row;
+    }
 }
 
-.background-image1{
+.background-image-1{
     height: 20rem;
-    background-image: url(../assets/pizzeriamamma.jpg);
+    background-image: url(../assets/pizzeria4.jpg);
     background-size: 100% 20rem;
 }
+
+.background-image-2{
+    height: 20rem;
+    background-image: url(../assets/pizzeria5.jpg);
+    background-size: 100% 20rem;
+}
+
+.white{
+    color: white;
+}
+
+.footer img {   
+    height: 30px;
+    background-size: 30px 30px;
+    padding: 0.1em;
+}
+
+.attached-file{
+    display: none;
+}
+
+.submit-button{
+    background-color: #006200;
+    border-color: #004500;
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #006200;
+    --bs-btn-border-color: #006200;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #005400;
+    --bs-btn-hover-border-color: #004500;
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #004500;
+    --bs-btn-active-border-color: #005400;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #006200;
+    --bs-btn-disabled-border-color: #006200;
+}
+
+.bd-green{
+    border: 2px solid #005400;
+}
+
+.mt-5{
+    margin-top: 5em;
+}
+
+.mt-10{
+    margin-top:3em;
+}
+
+.plato1{
+    height: 20rem;
+    width: 20rem;
+    background-image: url(../assets/ensalada.jpg);
+    background-size: cover;
+}
+.plato2{
+    height: 20rem;
+    width: 20rem;
+    background-image: url(../assets/antipasta.jpg);
+    background-size: cover;
+}
+.plato3{
+    height: 20rem;
+    width: 20rem;
+    background-image: url(../assets/pasta.jpg);
+    background-size: cover;
+}
+.plato4{
+    height: 20rem;
+    width: 20rem;
+    background-image: url(../assets/carne.jpg);
+    background-size: cover;
+}
+.plato5{
+    height: 20rem;
+    width: 20rem;
+    background-image: url(../assets/cerveza.jpg);
+    background-size: cover;
+}
+.plato6{
+    height: 20rem;
+    width: 20rem;
+    background-image: url(../assets/postre.jpg);
+    background-size: cover;
+}
+
+.menu{ 
+    height: 20rem;
+    min-width: 20rem;
+}
+
+.menu div div {
+    border-radius: 50%;
+}
+

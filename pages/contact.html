@@ -10,26 +10,149 @@
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-        <div class="container-fluid text-center justify-content-around fixed-top">
-            <div class="navbar">
-                <div class="index">
-                    <a href="../index.html" target="_self">
-                        <img src="../assets/logoMamma.png" alt="">
-                    </a>
+    <div class="container-fluid">
+        <div class="row text-center align-items-center text-red fixed-top bg-color-white navigation-bar">
+            <div class="col-9 col-md navigation-bar">
+                <div class="img-fluid justify-content-start p-3">
+                  <a href="../index.html"><div class="mamma-logo"></div></a>
                 </div>
-                <div class="primary-container">
-                    <div class="menu"><a href="menu.html" target="_self">ME<span class="red-letter">N</span>U</a></div>
-                    <div class="contact-us"><a href="#top">CONT<span class="red-letter">A</span>CTO</a></div>
-                </div>
-                
-                <div class="navbar-toggler"> <span class="navbar-toggler-icon custom-toggler"></span></div>
-                
             </div>
-
+            <div class="col-auto col-md-3 mobile">
+                <a href="menu.html" target="_self"> ME<span class="text-red">N</span>U</a>
+            </div>
+            <div class="col-md-3 mobile">
+                <a href="#top" target="_self"> CONTA<span class="text-red">C</span>TO</a>
+            </div>
+            <div class="col-2 col-md">
+                <div class="row">
+                    <div class="col">
+                        <div class="navbar navbar-toggler py-0 bg-color-white"> 
+                            <span class="navbar-toggler-icon"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row divisor">
+                <div class="col-8 bg-color-green"></div>
+                <div class="col-1 bg-color-red"></div>
+                <div class="col-3 bg-color-green"></div>
+            </div>
         </div>
-        
 
+        <div class="row divisor mt-5">
+            <div class="col-8 bg-color-green"></div>
+            <div class="col-1 bg-color-red"></div>
+            <div class="col-3 bg-color-green"></div>
+        </div>
+
+
+        <div class="row justify-content-center mt-3">
+            <div class="col-10">
+            <form class="mt-3 bg-color-red p-3 white text-center rounded bd-green">
+                <h5>MENSAJE</h5>
+                <div class="row mt-3">
+                    <div class="col-6 form-group">
+                        <label for="inquiry-type"><h6> <span class="mobile"> Tipo de </span> Consulta(*)</h6></label>
+                        <select class="form-control" id="inquiry-type" onchange="showAttachedBox(this)">
+                        <option value="feedback">Sugerencia</option>
+                        <option value="curriculum">Curriculum</option>
+                        <option value="marketing">Marketing</option>
+                        <option value="press">Prensa</option>
+                        <option value="questions">Preguntas</option>
+                        </select>
+                    </div>
+
+                    <div class="col-6 form-group">
+                        <label for="pizzeria-number"><h6>Pizzería(*)</h6></label>
+                        <select class="form-control" id="pizzeria-number">
+                        <option>La Mamma</option>
+                        <option>La Mamma 2</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="row mt-3 attached-file" id="attached-file">
+                    <div class="form-group">
+                        <input title="" type="file" class="form-control-file" id="attached-file-input">
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1"><h6>Comentario</h6></label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="8"></textarea>
+                    </div>
+                </div>
+
+                <h5 class="mt-3">DATOS PERSONALES</h5>
+                <div class="row">
+                    <div class="col-6 form-group mt-3">
+                        <input type="text" class="form-control" id="" placeholder="Nombre">
+                    </div>
+                    <div class="col-6 form-group mt-3">
+                        <input type="text" class="form-control" id="" placeholder="Apellidos">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 form-group mt-3">
+                        <input type="number" class="form-control" id="" placeholder="Número de teléfono">
+                    </div>
+                    <div class="col-6 form-group mt-3">
+                        <input type="email" class="form-control" id="" placeholder="Email">
+                    </div>
+                </div>
+
+                <div class="row mt-3 justify-content-start">
+                    <div class="col">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                            Por favor, envíame las últimas noticias, los nuevos menús y diferentes eventos.
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                                He leído y acepto la política de privacidad.(*)
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary mt-3 submit-button">Enviar</button>
+            </form>
+        </div>
+    </div>
+        <div class="row divisor mt-3">
+            <div class="col-8 bg-color-green"></div>
+            <div class="col-1 bg-color-red"></div>
+            <div class="col-3 bg-color-green"></div>
+        </div>
+
+        <div class="row footer text-center footer-mobile  bg-color-red white pb-3 pt-3">
+            <p> 📍Calle Bahía 5 -  ☎ 952 54 29 95 </p>
+            <p> 📍Av Andalucía 63B - ☎ 952 54 34 77</p>
+            <div class="col-sm-1"></div>
+            <div class="col-sm-1"></div>
+            <div class="col-xs-1 col-sm-1"> <a href="https://www.facebook.com/people/la-mamma/100063534583509/" target="_blank"><img src="../assets/facebook-logo.png" alt="facebook-logo"></a></div>
+            <div class="col-xs-1 col-sm-1"> <a href="https://www.instagram.com/pizzerialamamma/?hl=es" target="_blank"><img src="../assets/instagram-logo.png" alt="instagram-logo"></a></div>
+            <div class="col-xs-auto col-sm-4 text-center">Pizzería la Mamma © 2023</div>
+            <div class=" col-sm-auto"></div>
+        </div>
+
+        <div class="row divisor">
+            <div class="col-8 bg-color-green"></div>
+            <div class="col-1 bg-color-red"></div>
+            <div class="col-3 bg-color-green"></div>
+        </div>
+    </div>
+       
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script src="jquery-3.6.3.min.js"></script>
+    <script src="../js/main.js" ></script>
 </body>
 </html>
