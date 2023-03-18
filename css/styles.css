@@ -142,28 +142,8 @@ a{
     background-color: white;
 }
 
-@media only screen and (max-width: 768px){
-    .mobile{
-        display: none;
-    }
-    .patata{
-        flex-direction: row;
-    }
-}
-
-@media only screen and (max-width: 425px){
-    .mobile-display{
-        flex-direction: column;
-        font-size: 0.8rem;
-    }
-
-    .col-mobile-display{
-        width: 100%;
-    }
-
-    .footer-mobile{
-        flex-direction: row;
-    }
+.footer-margin{
+    margin-top: 35em;
 }
 
 .background-image-1{
@@ -215,57 +195,143 @@ a{
     border: 2px solid #005400;
 }
 
-.mt-5{
-    margin-top: 5em;
-}
-
-.mt-10{
+.mt-3em{
     margin-top:3em;
 }
 
-.plato1{
-    height: 20rem;
-    width: 20rem;
-    background-image: url(../assets/ensalada.jpg);
-    background-size: cover;
+.mt-5em{
+    margin-top:5em;
 }
-.plato2{
-    height: 20rem;
-    width: 20rem;
-    background-image: url(../assets/antipasta.jpg);
-    background-size: cover;
-}
-.plato3{
-    height: 20rem;
-    width: 20rem;
-    background-image: url(../assets/pasta.jpg);
-    background-size: cover;
-}
-.plato4{
-    height: 20rem;
-    width: 20rem;
-    background-image: url(../assets/carne.jpg);
-    background-size: cover;
-}
-.plato5{
-    height: 20rem;
-    width: 20rem;
-    background-image: url(../assets/cerveza.jpg);
-    background-size: cover;
-}
-.plato6{
-    height: 20rem;
-    width: 20rem;
-    background-image: url(../assets/postre.jpg);
+
+.menu-image{
+    height: 13rem;
+    width: 13rem;
     background-size: cover;
 }
 
+.menu-image:hover{
+    -webkit-filter: blur(3px);
+    border: 1px solid transparent;
+}
+
+.plato1{
+    background-image: url(../assets/ensalada.jpg);
+}
+
+.plato2{
+    background-image: url(../assets/antipasta.jpg);
+}
+
+.plato3{
+    background-image: url(../assets/pasta.jpg);
+}
+
+.plato4{
+    background-image: url(../assets/carne.jpg);
+}
+
+.plato5{
+    background-image: url(../assets/cerveza.jpg);
+}
+
+.plato6{
+    background-image: url(../assets/postre.jpg);
+}
+
+
 .menu{ 
-    height: 20rem;
-    min-width: 20rem;
+    height: 15rem;
+    min-width: 15rem;
 }
 
 .menu div div {
     border-radius: 50%;
 }
 
+.col-xs-12 {
+    display: flex;
+    margin-top:3em;
+} 
+
+.title-menu-1{
+    position: absolute;
+    display: none;
+    margin-top: 4em;
+    color: white;
+    text-shadow: black 3px 0 10px;
+    font-family: Impact;
+    font-size:1.4rem;
+}
+.title-menu-2{
+    position: absolute;
+    display: none;
+    margin-top: 4em;
+    color: white;
+    text-shadow: black 3px 0 10px;
+    font-family: Impact;
+    font-size:1.4rem;
+}
+.title-menu-3{
+    position: absolute;
+    display: none;
+    margin-top: 4em;
+    color: white;
+    text-shadow: black 3px 0 10px;
+    font-family: Impact;
+    font-size:1.4rem;
+}
+.title-menu-4{
+    position: absolute;
+    display: none;
+    margin-top: 4em;
+    color: white;
+    text-shadow: black 3px 0 10px;
+    font-family: Impact;
+    font-size:1.4rem;
+}
+.title-menu-5{
+    position: absolute;
+    display: none;
+    margin-top: 4em;
+    color: white;
+    text-shadow: black 3px 0 10px;
+    font-family: Impact;
+    font-size:1.4rem;
+}
+.title-menu-6{
+    position: absolute;
+    display: none;
+    margin-top: 4em;
+    color: white;
+    text-shadow: black 3px 0 10px;
+    font-family: Impact;
+    font-size:1.4rem;
+}
+
+@media only screen and (max-width: 768px){
+    .mobile{
+        display: none;
+    }
+    .images-disposition{
+        flex-direction: row;
+    }
+    .footer-margin{
+        margin-top: 83em;
+    }
+
+}
+
+@media only screen and (max-width: 425px){
+    .mobile-display{
+        flex-direction: column;
+        font-size: 0.8rem;
+    }
+
+    .col-mobile-display{
+        width: 100%;
+    }
+
+    .footer-mobile{
+        flex-direction: row;
+    }
+}
