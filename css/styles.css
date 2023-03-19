@@ -70,9 +70,20 @@ a{
     width: 15.9em;
     height: 8em;
     background-color: white;
-    position: absolute;
+    position: fixed;
     top: 5em; 
     right: 0px; 
+    border: 0.2em solid black;
+
+}
+
+.menu-content-left{
+    border-left: 1px solid #FF6B6B; 
+    border-right: 1px solid #FF6B6B;
+
+}
+.menu-content-right{
+    border-right: 1px solid #FF6B6B; 
 }
 
 .text-red{
@@ -117,35 +128,6 @@ a{
     
 }
 
-@media only screen and (max-width: 670px){
-    .image-1 {
-        height: 13em;
-    }
-    .pizza-icon{
-        height: 30px;
-        width: 30px;
-        background-size: 30px 30px;
-        margin-left: -1em;
-    
-    }
-    .delivery-icon{
-        height: 30px;
-        width: 30px;
-        background-size: 30px 30px;
-        margin-left: -1em;
-    
-    }
-    .cutlery-icon{
-        height: 30px;
-        width: 30px;
-        background-size: 30px 30px;
-        margin-left: -1em;
-    
-    }
-    .primary-container {
-        display: none;
-    }
-}
 
 .divisor{
     height: 0.2rem;
@@ -340,7 +322,41 @@ a{
     .footer-margin{
         margin-top: 83em;
     }
+    .menu-content-right{
+        border-left: 1px solid #FF6B6B; 
+    }
 
+}
+
+
+@media only screen and (max-width: 670px){
+    .image-1 {
+        height: 13em;
+    }
+    .pizza-icon{
+        height: 30px;
+        width: 30px;
+        background-size: 30px 30px;
+        margin-left: -1em;
+    
+    }
+    .delivery-icon{
+        height: 30px;
+        width: 30px;
+        background-size: 30px 30px;
+        margin-left: -1em;
+    
+    }
+    .cutlery-icon{
+        height: 30px;
+        width: 30px;
+        background-size: 30px 30px;
+        margin-left: -1em;
+    
+    }
+    .primary-container {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 425px){
