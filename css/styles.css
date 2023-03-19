@@ -41,16 +41,38 @@ a{
     height: 5em;
 }
 
+.navigation-toggler{
+    display: flex;
+    justify-content: end;
+}
+
 .navbar {
     height: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: end;
 }
+
+/* .navbar-toggler-icon:hover {
+    rotate: 90deg;
+    transition: 1s;
+} */
 
 .navbar-toggler {
     padding: 0;
     border: none;
+    /* transition: 1s; */
+}
+
+.navbar-menu{
+    display: none;
+    flex-direction: row;
+    width: 15.9em;
+    height: 8em;
+    background-color: white;
+    position: absolute;
+    top: 5em; 
+    right: 0px; 
 }
 
 .text-red{
